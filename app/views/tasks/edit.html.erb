@@ -1,0 +1,8 @@
+<h2>Edit Task</h2>
+
+<%= form_with model: @task, local: true, method: :patch do |f| %>
+  <p><%= f.text_field :title %></p>
+  <p><%= f.submit "編集" %></p>
+<% end %>
+
+<%= link_to "Todoリスト", tasks_path %>
